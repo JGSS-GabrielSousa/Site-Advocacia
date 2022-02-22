@@ -119,6 +119,12 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
+@media only screen and (max-width: 600px) {
+    #floating-container img {
+        max-width: 0px;
+        margin-right: 0px;
+    }
+}
 
 #especialidades {
     padding: 20px;
@@ -163,6 +169,9 @@ p {
 
 #profiles{
     display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 .profile{
     margin: 20px;

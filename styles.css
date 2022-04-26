@@ -23,9 +23,12 @@ nav li{
 }
 nav ul{
     display: inline-flex;
+    flex-wrap: wrap;
 	list-style: none;
     margin: 10px;
     padding-inline-start: 0;
+    align-items: center;
+    justify-content: center;
 }
 nav a{
     color: #072445;
@@ -127,8 +130,7 @@ p {
 }
 
 #especialidades {
-    padding: 20px;
-    padding-top: 100px;
+    padding: 80px;
     text-align: center;
 }
 #especi-cards{
@@ -162,9 +164,10 @@ p {
 }
 
 #equipe {
-    padding-bottom: 100px;
-    color: #072445;
+    padding: 20px 0px 100px 0px;
+    color: #ececec;
     text-align: center;
+    background-color: #072445;
 }
 
 #profiles{

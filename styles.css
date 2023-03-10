@@ -3,6 +3,10 @@
     src: url(fonts/AnticDidone-Regular.ttf);
 }
 
+* {
+    transition: 0.1s all;
+}
+
 nav {
     display: block;
     width: 100%;
@@ -135,23 +139,59 @@ p {
     padding: 80px;
     text-align: center;
 }
-#especi-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 0.25fr));
-    width: 100%;
+#especi-cards{    
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .card {
     background-color: #691514;
     color: #ececec;
     padding: 20px;
     margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    width: 15em;
 }
 .card h3 {
     text-align: center;
 }
 .card p {
     text-align: center;
+}
+
+.card-content {
+    text-align: start;
+}
+.card-content ul{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+    list-style: none;
+}
+.card-content li::before{
+    content: "\00BB";
+    padding-right: 5px;
+}
+.card-content li{
+    padding: 5px;
+}
+.card-content button{
+    padding: 10px;
+    color: #ececec;
+    text-align: center;
+    background-color: #008523cc;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.card-content button:hover{
+    background-color: #008523;
+}
+
+.card:hover, .profile-image:hover {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
 }
 
 #especialidades {
@@ -187,6 +227,7 @@ p {
     width: 200px;
     border-radius: 1000px;
     box-shadow: 0px 2px 5px 0px #111;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 /* ===== Scrollbar CSS ===== */

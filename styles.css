@@ -235,6 +235,10 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+#redes-sociais {
+    padding: 60px;
+}
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
